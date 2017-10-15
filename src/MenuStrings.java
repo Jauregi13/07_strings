@@ -55,11 +55,14 @@ public class MenuStrings {
 				break;
 				
 				case EXTRAER:
-					System.out.println("Guardando datos en disco D...");
+					System.out.println("Escribe tu nombre y apellido todo junto:");
+					String nombre_apellido = scan.nextLine();
+					int apellido = nombre_apellido.indexOf(" ");
+					System.out.println("Este es tu apellido: " +nombre_apellido.substring(apellido,nombre_apellido.length()));
 				break;
 				
 				case SALIR:
-					System.out.println("Copiando CD...");
+					System.out.println("Saliendo...");
 				break;
 				default:
 					System.out.println("Opción incorrecta");
