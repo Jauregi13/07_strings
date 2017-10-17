@@ -57,7 +57,7 @@ public class MenuStrings {
 				case EXTRAER:
 					System.out.println("Escribe tu nombre y apellido todo junto:");
 					String nombre_apellido = scan.nextLine();
-					int apellido = nombre_apellido.indexOf(" ");
+					int apellido = nombre_apellido.indexOf(" ") + 1;
 					System.out.println("Este es tu apellido: " +nombre_apellido.substring(apellido,nombre_apellido.length()));
 				break;
 				

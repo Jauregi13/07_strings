@@ -7,11 +7,15 @@ public class VolcarFrase {
 		
 		Scanner scan = new Scanner (System.in);
 		String frase = scan.nextLine();
-		String invertido = " ";
-		
-		for (int i = frase.length(); i <= frase.length() || i >= 0; i--){
-			char caracter = frase.charAt(i-1);
-			invertido = String.valueOf(caracter);
+		String invertido = "";
+		System.out.println(frase.length());
+		System.out.println(frase.charAt(frase.length()-1));
+		System.out.println(frase.charAt(frase.length()-2));
+		System.out.println(frase.charAt(frase.length()-3));
+		invertido = frase.charAt(frase.length()-1) + "aj";
+		System.out.println(invertido);
+		for (int i = frase.length(); i <= frase.length() || i > 0; i--){
+			invertido = frase.charAt(i-1) + invertido;
 		}
 		System.out.println(invertido);
 
